@@ -25,7 +25,7 @@ function Post(){
     return (
         <div className="item">
             <div className="images">
-                <Link href={"/"}><a><Image src={"/images/img1.jpg"} className="rounded" width={500} height={350} /></a></Link>
+                <Link href={"/"}><a><Image alt="images" src={"/images/img1.jpg"} className="rounded" width={500} height={350} /></a></Link>
             </div>
             <div className="info flex justify-center flex-col py-4">
                 <div className="cat">

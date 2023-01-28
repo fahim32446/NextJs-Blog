@@ -17,7 +17,7 @@ export default function Page(){
                     <p className='text-gray-500 text-xl text-center'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
                     <div className="py-10">
-                        <Image src={"/images/img1.jpg"} width={900} height={600}></Image>
+                        <Image alt="images" src={"/images/img1.jpg"} width={900} height={600}></Image>
                     </div>
 
                     <div className="content text-gray-600 text-lg flex flex-col gap-4">

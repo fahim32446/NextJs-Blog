@@ -34,7 +34,7 @@ function Post() {
       <div className="images">
         <Link href={'/'}>
           <a>
-            <Image src={'/images/img1.jpg'} width={600} height={400} />
+            <Image src={'/images/img1.jpg'}  alt="images" width={600} height={400} />
           </a>
         </Link>
       </div>

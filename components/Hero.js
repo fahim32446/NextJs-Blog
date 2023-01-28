@@ -46,7 +46,7 @@ function Slide(){
     return (
         <div className="grid md:grid-cols-2">
             <div className="image">
-                <Link href={"/"}><a><Image src={"/images/img1.jpg"} width={600} height={600} /></a></Link>
+                <Link href={"/"}><a><Image alt="images" src={"/images/img1.jpg"} width={600} height={600} /></a></Link>
             </div>
             <div className="info flex justify-center flex-col">
                 <div className="cat">
