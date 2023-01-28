@@ -32,6 +32,7 @@ function Post() {
               className="rounded"
               width={300}
               height={200}
+              alt="Image"
             />
           </a>
         </Link>

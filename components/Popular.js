@@ -17,7 +17,15 @@ const Popular = () => {
       <h1 className="font-bold text-4xl py-12 text-center">Most Popular</h1>
 
       {/* swiper */}
-      <Swiper slidesPerView={2} >
+      <Swiper
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        }}
+        slidesPerView={2}
+      >
         {data.map((value, index) => (
           <SwiperSlide key={index}>
             <Post data={value}></Post>
@@ -36,27 +44,27 @@ function Post({ data }) {
   return (
     <div className="grid">
       <div className="images">
-        <Link href={'/'}>
+        <Link href={`posts/${id}`}>
           <a>
-            <Image src={img || ''} width={600} height={400} />
+            <Image src={img || ''} alt="Image" width={600} height={400} />
           </a>
         </Link>
       </div>
       <div className="info flex justify-center flex-col py-4">
         <div className="cat">
-          <Link href={'/'}>
+          <Link href={`posts/${id}`}>
             <a className="text-orange-600 hover:text-orange-800">
               {category || 'No Category'}
             </a>
           </Link>
-          <Link href={'/'}>
+          <Link href={`posts/${id}`}>
             <a className="text-gray-800 hover:text-gray-600">
               - {published || ''}
             </a>
           </Link>
         </div>
         <div className="title">
-          <Link href={'/'}>
+          <Link href={`posts/${id}`}>
             <a className="text-3xl md:text-4xl font-bold text-gray-800 hover:text-gray-600">
               {title || 'No Title'}
             </a>

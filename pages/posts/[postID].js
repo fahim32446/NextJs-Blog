@@ -23,7 +23,7 @@ const page = ({ title, img, subtitle, description, author }) => {
           </p>
 
           <div className="py-10">
-            <Image src={img || '/'} width={900} height={600}></Image>
+            <Image src={img || '/'} width={900} height={600} alt="Image"></Image>
           </div>
 
           <div className="content text-gray-600 text-lg flex flex-col gap-4">
