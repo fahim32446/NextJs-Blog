@@ -1,8 +1,12 @@
 import Link from "next/link"
 import Image from "next/image"
 import Author from "./_child/author"
+import getPost from "../lib/helper"
 
 const LatestPost = () => {
+
+    getPost()
+
   return (
     <section className="container mx-auto md:px-20 py-10">
     <h1 className="font-bold text-4xl py-12 text-center">Latest Posts</h1>

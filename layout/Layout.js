@@ -5,7 +5,7 @@ import Head from 'next/head';
 
 const Layout = ({ children }) => {
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto p-1'>
       <Head>
         <title>Blog</title>
       </Head>

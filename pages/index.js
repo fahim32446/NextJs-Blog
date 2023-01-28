@@ -4,6 +4,7 @@ import Layout from '../layout/Layout'
 import Hero from '../components/Hero'
 import LatestPost from '../components/LatestPost'
 import PopularPost from '../components/Popular'
+import CategoryPost from '../components/CategoryPost'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <LatestPost />
         <PopularPost />
+        <CategoryPost />
     </Layout>
   )
 }
