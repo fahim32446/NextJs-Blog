@@ -1,18 +1,20 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Layout from '../layout/Layout'
-import Hero from '../components/Hero'
-import LatestPost from '../components/LatestPost'
-import PopularPost from '../components/Popular'
-import CategoryPost from '../components/CategoryPost'
+import Format from '../layout/format';
+
+// compoenents
+import Hero from '../components/hero';
+import Latest from '../components/latest';
+import Popular from '../components/popular';
+import Catpost from '../components/catpost';
 
 export default function Home() {
   return (
-    <Layout>
-        <Hero />
-        <LatestPost />
-        <PopularPost />
-        <CategoryPost />
-    </Layout>
+   <Format className="p-2">
+      <Hero></Hero>
+      <Latest></Latest>
+      <Popular></Popular>
+      <Catpost></Catpost>
+   </Format>
   )
 }
